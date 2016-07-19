@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Birthday Calender</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="calender">
+            <div class="day"><button>MON</button><div class="cardwrapper" id="monday"></div></div>
+            <div class="day"><button>TUE</button><div class="cardwrapper" id="tuesday"></div></div>
+            <div class="day"><button>WED</button><div class="cardwrapper" id="wednesday"></div></div>
+            <div class="day"><button>THU</button><div class="cardwrapper" id="thrusday"></div></div>
+            <div class="day"><button>FRI</button><div class="cardwrapper" id="friday"></div></div>
+            <div class="day"><button>SAT</button><div class="cardwrapper" id="saterday"></div></div>
+            <div class="day"><button>SUN</button><div class="cardwrapper" id="sunday"></div></div>
+        </div>
+        <div class="inputHandler">
+            <div>
+                <textarea rows="25" cols="100" id="sourceData" placeholder="Enter json array here..." onblur="validateJson()"></textarea>
+            </div>
+            <div class="userClick">
+            <input type="text" id="targetYear" onblur="validateYear()" placeholder="Year"></input>
+                <div id="update" onclick="rendorCards()">Update</div>
+                <div id="error"></div>
+            </div>
+        </div>
+    </body>
+    <script src="dist/main.min.js"></script>
+    <script>
+      
+</script>
+</html>

@@ -1,0 +1,83 @@
+html {
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+}
+body {
+    overflow-x: hidden;
+    background-color: #f0f8ff;
+}
+.calender{
+    border-bottom: 1px black solid;
+    height: 250px;
+    display: inline-flex;
+}
+.day{
+    width: 175px;
+    height: 225px;//195px;
+    margin-right: 10px;
+    //background-color: #ccc9d0;
+}
+.day > button{
+    width: 100%;
+    height: 20%;
+    background-color: #4285f4;
+    outline: none;
+    border: none;
+    padding: 0;
+    text-align: right;
+    color: white;
+    font-size: large;
+    padding-right: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cardwrapper{
+    width: 100%;
+    height: 79.78%;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/smiley-emoticons-brush-outline/80/35-128.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+}
+.cardwrapper > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#sourceData{
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+}
+.inputHandler{
+    display: inline-flex;
+}
+.userClick{
+    margin: 80px;
+}
+#update{
+    margin-top: 20px;
+    color: white;
+    width: 50%;
+    height: 14%;
+    text-align: center;
+    background: #4285f4;
+    line-height: 170%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #7EA4B5;
+    cursor: pointer;
+}
+#error{
+    margin-top: 25px;
+    color: red;
+    text-shadow: 2px 2px 9px red;
+    font-size: x-large;
+}
+#targetYear{
+    padding: 11px 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
