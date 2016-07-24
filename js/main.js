@@ -184,4 +184,8 @@ function validateYear(){
     if(!yearInput.match(regx)){
         errNode.textContent='wrong yearInput';
     }
+    else {
+        clearAll();
+        flag = true;
+    }
 }
